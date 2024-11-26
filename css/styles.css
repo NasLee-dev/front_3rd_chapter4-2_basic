@@ -32,7 +32,7 @@
 
 body {
   margin: 0;
-  font-family: "Heebo";
+  font-family: "Heebo", sans-serif;
   padding-top: 80px;
 }
 
@@ -128,11 +128,6 @@ section.hero img {
   width: 100%;
   height: auto;
   filter: brightness(50%);
-  display: none;
-}
-
-section.hero img.desktop {
-  display: initial;
 }
 
 .hero-content {
@@ -203,10 +198,6 @@ section.country-bar {
   flex-direction: column;
   height: 60px;
   background-color: #f2f2f2;
-}
-
-section.country-bar.hidden {
-  display: none;
 }
 
 section.best-sellers {
@@ -503,14 +494,6 @@ footer .copyright-text {
     display: inline-block;
   }
 
-  section.hero img.desktop {
-    display: none;
-  }
-
-  section.hero img.tablet {
-    display: initial;
-  }
-
   .hero-content h1 {
     font-size: 40px;
     letter-spacing: 1px;
@@ -643,14 +626,6 @@ footer .copyright-text {
     height: 7px;
   }
 
-  section.hero img.tablet {
-    display: none;
-  }
-
-  section.hero img.mobile {
-    display: initial;
-  }
-
   .hero-content {
     position: static;
     margin-bottom: 40px;
@@ -765,4 +740,3 @@ footer .copyright-text {
     margin-bottom: 0;
   }
 }
-/* End of Design for Mobile Phones */
