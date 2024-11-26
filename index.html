@@ -24,13 +24,12 @@
 
     <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
     <script
-      defer
-      type="text/javascript"
       src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js"
       charset="UTF-8"
+      defer
     ></script>
-    <script defer type="text/javascript" charset="UTF-8">
-      document.addEventListener("DOMContentLoaded", function () {
+    <script charset="UTF-8" defer>
+      window.addEventListener("DOMContentLoaded", function () {
         cookieconsent.run({
           notice_banner_type: "simple",
           consent_type: "express",
@@ -74,7 +73,7 @@
             <li><a href="index.html#best-sellers-section">Best Sellers</a></li>
             <li><a href="index.html#newsletter-section">Newsletter</a></li>
             <li class="menu-icon">
-              <img src="images/menu_icon.webp" width="30" height="20" />
+              <img src="images/menu_icon.webp" width="29" height="20" />
             </li>
           </ul>
         </nav>
@@ -82,15 +81,33 @@
     </header>
 
     <section class="hero">
-      <img width="1920" height="893" src="images/Hero_Desktop.webp" />
-      <img width="768" height="893" src="images/Hero_Tablet.webp" />
-      <img width="375" height="893" src="images/Hero_Mobile.webp" />
+      <img
+        class="desktop"
+        src="images/Hero_Desktop.webp"
+        alt="Desktop Image"
+        width="1020"
+        height="450"
+      />
+      <img
+        class="tablet"
+        src="images/Hero_Tablet.webp"
+        alt="Tablet Image"
+        width="800"
+        height="350"
+      />
+      <img
+        class="mobile"
+        src="images/Hero_Mobile.webp"
+        alt="Mobile Image"
+        width="600"
+        height="200"
+      />
 
       <div class="hero-content">
         <div class="container">
           <h1>Discover our line of VR Headsets</h1>
           <p>
-            Sed ut perspiciatis unde omnis iste natus err4or sit voluptatem
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium.
           </p>
           <button>View Headsets</button>
@@ -98,7 +115,7 @@
       </div>
     </section>
 
-    <section class="country-bar"></section>
+    <section class="country-bar hidden"></section>
 
     <section class="best-sellers" id="best-sellers-section">
       <h1>Best Sellers</h1>
@@ -107,7 +124,13 @@
         <div class="container">
           <div class="product new">
             <div class="product-picture">
-              <img src="images/vr1.webp" alt="product: Penom Case" />
+              <img
+                src="images/vr1.webp"
+                alt="product: Penom Case"
+                loading="lazy"
+                width="70"
+                height="70"
+              />
             </div>
             <div class="product-info">
               <h5 class="categories">Headsets, Apple</h5>
@@ -124,6 +147,9 @@
               <img
                 src="images/vr2.webp"
                 alt="product: Noise Cancelling Headphone"
+                loading="lazy"
+                width="70"
+                height="70"
               />
             </div>
             <div class="product-info">
@@ -141,6 +167,9 @@
               <img
                 src="images/vr3.webp"
                 alt="product: Canon Digital SLR EOS Rebel T6"
+                loading="lazy"
+                width="70"
+                height="70"
               />
             </div>
             <div class="product-info">
@@ -219,7 +248,7 @@
 
     <a href="#" id="open_preferences_center">Update cookies preferences</a>
 
-    <script type="text/javascript" src="/js/main.js"></script>
-    <script type="text/javascript" src="/js/products.js"></script>
+    <script type="text/javascript" src="/js/main.js" defer></script>
+    <script type="text/javascript" src="/js/products.js" defer></script>
   </body>
 </html>
